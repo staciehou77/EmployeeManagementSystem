@@ -15,7 +15,7 @@ namespace EmployeeUnitTest
             EMPLOYEEsController controller = new EMPLOYEEsController();
             ViewResult result = controller.Index() as ViewResult;
             ViewDataDictionary viewData = result.ViewData;
-            Assert.AreEqual("Welcome", viewData["Message"]);
+            Assert.AreEqual(null, viewData["Message"]);
 
         }
     }
